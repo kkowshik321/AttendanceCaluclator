@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="attendancecaluclator.css">
+</head>
+<body id="body">
+    <div id="container" class="container">
+        <div class="color-picker">
+        <div class="color-btn" style="background-color: deepskyblue;" onclick="kowshik('deepskyblue')"></div>
+        <div class="color-btn" style="background-color: coral;" onclick="kowshik('coral')"></div>
+        <div class="color-btn" style="background-color: rgb(206, 124, 30);" onclick="kowshik('rgb(206, 124, 30)')"></div>
+        <div class="color-btn" style="background-color: rgb(38, 180, 19);" onclick="kowshik('rgb(38, 180, 19)')"></div>
+    </div>
+        <div class="para">
+        <h2>Attendance Calculator</h2>
+        <h3>Calculate your attendance percentage:</h3>
+        </div>
+        <form id="attendanceform" class="attendanceform">
+            <label for="total-classes">Total Classes:</label>
+            <input type="number" class="classes" id="total" required>
+
+            <label for="attended-classes">Attended Classes:</label>
+            <input type="number" class="classes" id="attended" required>
+
+            <label for="percentage">Enter Percentage:</label>
+            <input type="number" class="classes" id="percentage"w required>
+
+            <button class="button" id="button" type="submit">Calculate Attendance</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="attendancecaluclator.js"></script>
+    <script>
+        function kowshik(color){
+            document.getElementById('container').style.backgroundColor=color
+             document.getElementById('button').style.backgroundColor=color
+        }
+    </script>
+</body>
+</html>
