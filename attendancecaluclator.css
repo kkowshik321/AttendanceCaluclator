@@ -32,6 +32,7 @@ body {
     width:100%;
     box-sizing: border-box;
     box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+    text-align:center;
 }
 label{
     font-weight:bold;
